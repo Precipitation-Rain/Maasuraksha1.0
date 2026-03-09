@@ -156,10 +156,12 @@ html, body, [class*="css"] {
     color: #1e293b !important;
 }
 /* ── Dropdown options – desktop + mobile ── */
-[data-baseweb="popover"],
-[data-baseweb="popover"] *,
-[data-baseweb="menu"],
-[data-baseweb="menu"] * {
+[data-baseweb="popover"] ul,
+[data-baseweb="popover"] li,
+[data-baseweb="popover"] [role="option"],
+[data-baseweb="menu"] ul,
+[data-baseweb="menu"] li,
+[data-baseweb="menu"] [role="option"] {
     background-color: #1e293b !important;
     color: #ffffff !important;
 }
@@ -169,12 +171,14 @@ html, body, [class*="css"] {
 [data-baseweb="menu"]    [aria-selected="true"] {
     background-color: #0e7490 !important;
     color: #ffffff !important;
+    border-radius: 8px !important;
 }
 /* Mobile listbox fallback */
 ul[role="listbox"],
-ul[role="listbox"] *,
+ul[role="listbox"] li,
+ul[role="listbox"] [role="option"],
 div[role="listbox"],
-div[role="listbox"] * {
+div[role="listbox"] [role="option"] {
     background-color: #1e293b !important;
     color: #ffffff !important;
 }
@@ -184,6 +188,16 @@ li[role="option"][aria-selected="true"],
 div[role="option"][aria-selected="true"] {
     background-color: #0e7490 !important;
     color: #ffffff !important;
+    border-radius: 8px !important;
+}
+/* Override Streamlit default light blue hover */
+[data-baseweb="list-item"]:hover,
+[data-baseweb="list-item"]:focus,
+[data-baseweb="menu-item"]:hover,
+[data-baseweb="menu-item"]:focus {
+    background-color: #0e7490 !important;
+    color: #ffffff !important;
+    border-radius: 8px !important;
 }
 label {
     font-family: 'Sora', sans-serif !important;
