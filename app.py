@@ -155,7 +155,34 @@ html, body, [class*="css"] {
 [data-baseweb="select"] input {
     color: #1e293b !important;
 }
-[data-baseweb="popover"] li {
+/* ── Dropdown options – desktop + mobile ── */
+[data-baseweb="popover"],
+[data-baseweb="popover"] *,
+[data-baseweb="menu"],
+[data-baseweb="menu"] * {
+    background-color: #1e293b !important;
+    color: #ffffff !important;
+}
+[data-baseweb="popover"] [role="option"]:hover,
+[data-baseweb="menu"]    [role="option"]:hover,
+[data-baseweb="popover"] [aria-selected="true"],
+[data-baseweb="menu"]    [aria-selected="true"] {
+    background-color: #0e7490 !important;
+    color: #ffffff !important;
+}
+/* Mobile listbox fallback */
+ul[role="listbox"],
+ul[role="listbox"] *,
+div[role="listbox"],
+div[role="listbox"] * {
+    background-color: #1e293b !important;
+    color: #ffffff !important;
+}
+li[role="option"]:hover,
+div[role="option"]:hover,
+li[role="option"][aria-selected="true"],
+div[role="option"][aria-selected="true"] {
+    background-color: #0e7490 !important;
     color: #ffffff !important;
 }
 label {
