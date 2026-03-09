@@ -8,3 +8,4 @@ deep-translator
 google-generativeai
 xgboost
 scikit-learn
+python-dotenv
