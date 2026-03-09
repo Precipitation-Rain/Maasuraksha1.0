@@ -155,65 +155,35 @@ html, body, [class*="css"] {
 [data-baseweb="select"] input {
     color: #1e293b !important;
 }
-[data-baseweb="popover"] li {
-    color: #ffffff !important;
-    background-color: #1e293b !important;
-}
-[data-baseweb="popover"] ul {
-    background-color: #1e293b !important;
-}
-[data-baseweb="popover"] [role="option"] {
+/* ── Dropdown options – desktop + mobile ── */
+[data-baseweb="popover"],
+[data-baseweb="popover"] *,
+[data-baseweb="menu"],
+[data-baseweb="menu"] * {
     background-color: #1e293b !important;
     color: #ffffff !important;
 }
-[data-baseweb="popover"] [role="option"]:hover {
-    background-color: #0e7490 !important;
-}
-[data-baseweb="menu"] {
-    background-color: #1e293b !important;
-}
-[data-baseweb="menu"] li {
-    background-color: #1e293b !important;
-    color: #ffffff !important;
-}
-[data-baseweb="menu"] [role="option"]:hover,
-[data-baseweb="menu"] [aria-selected="true"] {
-    background-color: #0e7490 !important;
-}
-/* Mobile dropdown nuclear fix */
-ul[role="listbox"] {
-    background-color: #1e293b !important;
-}
-ul[role="listbox"] li {
-    background-color: #1e293b !important;
-    color: #ffffff !important;
-}
-ul[role="listbox"] li:hover,
-ul[role="listbox"] li[aria-selected="true"] {
+[data-baseweb="popover"] [role="option"]:hover,
+[data-baseweb="menu"]    [role="option"]:hover,
+[data-baseweb="popover"] [aria-selected="true"],
+[data-baseweb="menu"]    [aria-selected="true"] {
     background-color: #0e7490 !important;
     color: #ffffff !important;
 }
-div[role="listbox"] {
+/* Mobile listbox fallback */
+ul[role="listbox"],
+ul[role="listbox"] *,
+div[role="listbox"],
+div[role="listbox"] * {
     background-color: #1e293b !important;
     color: #ffffff !important;
 }
-div[role="option"] {
-    background-color: #1e293b !important;
-    color: #ffffff !important;
-}
-div[role="option"]:hover {
+li[role="option"]:hover,
+div[role="option"]:hover,
+li[role="option"][aria-selected="true"],
+div[role="option"][aria-selected="true"] {
     background-color: #0e7490 !important;
-}
-.stSelectbox div[class*="menu"] {
-    background-color: #1e293b !important;
     color: #ffffff !important;
-}
-.stSelectbox div[class*="option"] {
-    background-color: #1e293b !important;
-    color: #ffffff !important;
-}
-.stSelectbox div[class*="option"]:hover {
-    background-color: #0e7490 !important;
 }
 label {
     font-family: 'Sora', sans-serif !important;
