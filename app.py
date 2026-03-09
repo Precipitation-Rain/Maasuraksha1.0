@@ -180,6 +180,41 @@ html, body, [class*="css"] {
 [data-baseweb="menu"] [aria-selected="true"] {
     background-color: #0e7490 !important;
 }
+/* Mobile dropdown nuclear fix */
+ul[role="listbox"] {
+    background-color: #1e293b !important;
+}
+ul[role="listbox"] li {
+    background-color: #1e293b !important;
+    color: #ffffff !important;
+}
+ul[role="listbox"] li:hover,
+ul[role="listbox"] li[aria-selected="true"] {
+    background-color: #0e7490 !important;
+    color: #ffffff !important;
+}
+div[role="listbox"] {
+    background-color: #1e293b !important;
+    color: #ffffff !important;
+}
+div[role="option"] {
+    background-color: #1e293b !important;
+    color: #ffffff !important;
+}
+div[role="option"]:hover {
+    background-color: #0e7490 !important;
+}
+.stSelectbox div[class*="menu"] {
+    background-color: #1e293b !important;
+    color: #ffffff !important;
+}
+.stSelectbox div[class*="option"] {
+    background-color: #1e293b !important;
+    color: #ffffff !important;
+}
+.stSelectbox div[class*="option"]:hover {
+    background-color: #0e7490 !important;
+}
 label {
     font-family: 'Sora', sans-serif !important;
     font-size: 0.78rem !important;
